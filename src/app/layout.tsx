@@ -1,15 +1,76 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Poppins,
+  Bebas_Neue,
+  Rethink_Sans,
+  DM_Sans,
+  Inter,
+  Manrope,
+  Figtree,
+  League_Gothic,
+} from "next/font/google";
 import "./globals.css";
+import Providers from "./Providers";
+import LenisScrollProvider from "./LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+}) 
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
+
+const league = League_Gothic({
+  variable: "--font-league-gothic",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600"],
+});
+
+const rethink = Rethink_Sans({
+  variable: "--font-rethink-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const bebas = Bebas_Neue({
+  variable: "--font-bebas-neue",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +86,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${figtree.variable} ${manrope.variable} ${inter.variable} ${dmSans.variable} ${rethink.variable} ${league.variable} ${bebas.variable} ${poppins.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Providers>
+          <LenisScrollProvider>{children}</LenisScrollProvider>
+        </Providers>
       </body>
     </html>
   );
