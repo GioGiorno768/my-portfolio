@@ -77,7 +77,7 @@ export default function Experience() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ staggerChildren: 0, delayChildren: 0.3 }}
+            transition={{ staggerChildren: 0}}
             className="lg:w-[75%] w-full "
           >
             <motion.hr
@@ -101,7 +101,7 @@ export default function Experience() {
                   }}
                   transition={{
                     duration: 1,
-                    delay: 1.3,
+                    delay: .8,
                     ease: [0.457, 0.343, 0.108, 1.035],
                   }}
                   key={item.id}
