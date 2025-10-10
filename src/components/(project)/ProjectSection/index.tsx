@@ -5,6 +5,7 @@ import MarqueeElement from "@/components/Marque/MarqueElement";
 import { AnimatePresence, motion } from "framer-motion";
 import FlipText from "@/components/TextEfek/FlipText";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ProjectSection() {
   const marque = [
@@ -35,41 +36,34 @@ export default function ProjectSection() {
       title: "Taman Sekartaji",
       content:
         "Website papan informasi sekartaji yang berguna sebagai informasi untuk pengunjung taman sekartaji",
-      description: [
-        {
-          val: "2024", // ini tahun (buat sorting)
-        },
-        {
-          val: "1,5 bulan",
-        },
-        {
-          val: ["Laravel 10", "Tailwind CSS"],
-        },
-        {
-          val: "https://taman-sekartaji.vercel.app/",
-        },
-      ],
+      year: "2024", // ini tahun (buat sorting)
+      month: "1,5 bulan",
+      lib: ["Laravel 10", "Tailwind CSS"],
+      link: "https://taman-sekartaji.vercel.app/",
+      status: true,
       image: "/images/project/sekartaji.webp",
     },
     {
       title: "E-Antivirus",
       content:
         "Website sistem monitoring aktivitas pegawai yang tengah bertugas di ruang server Komdigi Kab. Kediri",
-      description: [
-        {
-          val: "2022",
-        },
-        {
-          val: "1,5 bulan",
-        },
-        {
-          val: ["CodeIgniter4", "Tailwind CSS"],
-        },
-        {
-          val: "https://taman-sekartaji.vercel.app/",
-        },
-      ],
+      year: "2022",
+      month: "1,5 bulan",
+      lib: ["CodeIgniter4", "Tailwind CSS"],
+      link: "https://e-antivirus.kedirikab.go.id/",
+      status: true,
       image: "/images/project/eantivirus.webp",
+    },
+    {
+      title: "Deadlift Tracker",
+      content:
+        "Aplikasi Berbasis Web Untuk Perhitungan Repetisi Dan Koreksi Gerakan Deadlift Menggunakan Estimasi Pose",
+      year: "2025",
+      month: "3,5 bulan",
+      lib: ["React Js", "Tailwind CSS", "framer motion"],
+      link: "https://deadlift-tracker.vercel.app/",
+      status: false,
+      image: "/images/project/deadlift.png",
     },
   ];
 
@@ -80,8 +74,8 @@ export default function ProjectSection() {
 
   // 👉 Sort project berdasarkan tahun (description[0].val)
   const sortedProjects = [...project].sort((a, b) => {
-    const yearA = parseInt(a.description[0].val as string);
-    const yearB = parseInt(b.description[0].val as string);
+    const yearA = parseInt(a.year as string);
+    const yearB = parseInt(b.year as string);
 
     if (sortOrder === "asc") {
       return yearA - yearB; // terlama → terbaru
@@ -235,23 +229,44 @@ export default function ProjectSection() {
                     {item.content}
                   </p>
                   <div className="w-full mt-[3em]">
-                    {item.description.map((desc, id) => (
-                      <div
-                        key={id}
-                        className="w-full border-b-[.1em] border-blackSemu py-[2em] flex justify-around items-start gap-[2em]"
-                      >
-                        <div className="w-[60%] font-manrope text-[1.6em] uppercase">
-                          <p>{detail[id]}</p>
-                        </div>
-                        <div className="w-[60%] font-manrope text-end text-[1.6em]">
-                          <p>
-                            {Array.isArray(desc.val)
-                              ? desc.val.join(", ")
-                              : desc.val}
-                          </p>
-                        </div>
+                    <div className="w-full border-b-[.1em] border-blackSemu py-[2em] flex justify-around items-start gap-[2em]">
+                      <div className="w-[60%] font-manrope text-[1.6em] uppercase">
+                        <p>Year</p>
                       </div>
-                    ))}
+                      <div className="w-[60%] font-manrope text-end text-[1.6em]">
+                        <p>{item.year}</p>
+                      </div>
+                    </div>
+                    <div className="w-full border-b-[.1em] border-blackSemu py-[2em] flex justify-around items-start gap-[2em]">
+                      <div className="w-[60%] font-manrope text-[1.6em] uppercase">
+                        <p>Timeline</p>
+                      </div>
+                      <div className="w-[60%] font-manrope text-end text-[1.6em]">
+                        <p>{item.month}</p>
+                      </div>
+                    </div>
+                    <div className="w-full border-b-[.1em] border-blackSemu py-[2em] flex justify-around items-start gap-[2em]">
+                      <div className="w-[60%] font-manrope text-[1.6em] uppercase">
+                        <p>Stack</p>
+                      </div>
+                      <div className="w-[60%] font-manrope text-end text-[1.6em]">
+                        <p>{item.lib.join(", ")}</p>
+                      </div>
+                    </div>
+                    <div className="w-full border-b-[.1em] border-blackSemu py-[2em] flex justify-around items-start gap-[2em]">
+                      <div className="w-[60%] font-manrope text-[1.6em] uppercase">
+                        <p>Live Project</p>
+                      </div>
+                      <div className="w-[60%] font-manrope text-end text-[1.6em]">
+                        <Link href={item.link} target="_blank" passHref>
+                          {item.status ? (
+                            <button disabled>Link is disabled</button>
+                          ) : (
+                            <button>Preview →</button>
+                          )}
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="px-[8em] py-[5em] lg:w-[50%] w-full h-[50em] bg-[#E5E6EB] flex justify-center items-center">
