@@ -73,7 +73,7 @@ export default function ProjectSection() {
       month: "1 bulan",
       lib: ["Next Js", "Laravel", "Tailwind CSS", "framer motion"],
       link: "https://vin-inventory.vercel.app/",
-      status: true,
+      status: false,
       image: "/images/project/inventory.png",
     },
   ];
