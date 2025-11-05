@@ -65,6 +65,17 @@ export default function ProjectSection() {
       status: false,
       image: "/images/project/deadlift.png",
     },
+    {
+      title: "Smart Inventory",
+      content:
+        "aplikasi web yang dirancang untuk membantu perusahaan dalam mengelola inventori barang secara efisien",
+      year: "2025",
+      month: "1 bulan",
+      lib: ["Next Js", "Laravel", "Tailwind CSS", "framer motion"],
+      link: "https://vin-inventory.vercel.app/",
+      status: true,
+      image: "/images/project/inventory.png",
+    },
   ];
 
   const detail = ["year", "timeline", "stack", "preview"];
