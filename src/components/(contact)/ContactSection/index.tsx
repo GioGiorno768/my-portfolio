@@ -270,7 +270,7 @@ export default function ContactSection() {
                 </span>
                 <div className="flex flex-col text-[1.6em] lg:flex-row lg:justify-start justify-start lg:items-center lg:gap-[2em] gap-[.2em]">
                   <Link
-                    href="https://www.linkedin.com/in/kevinragil/"
+                    href="https://www.linkedin.com/in/kevin-ragil-krisna-dyansyah/"
                     target="_blank"
                     className="hover:text-white hover:-translate-y-[.2em] transition-all duration-200 ease-in-out"
                   >

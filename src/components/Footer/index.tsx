@@ -97,10 +97,7 @@ export default function Footer() {
             <div className="w-[25%] text-[1.6em] font-manrope uppercase lg:block hidden">
               <p>Mari jalin kerjasama dalam membangun project sesuai impian</p>
             </div>
-            <motion.div 
-              style={{ x }}
-              
-            >
+            <motion.div style={{ x }}>
               <MagnetButton
                 strength={0.4}
                 className="w-[20em] h-[20em] relative bg-white rounded-full lg:-translate-x-[40em] -translate-x-[55em] me-[5em] lg:-translate-y-[13em] -translate-y-0"
@@ -150,7 +147,7 @@ export default function Footer() {
               </span>
               <div className="flex justify-start items-center gap-[1.5em] text-[2em] ">
                 <Link
-                  href="https://www.linkedin.com/in/kevinragil/"
+                  href="https://www.linkedin.com/in/kevin-ragil-krisna-dyansyah/"
                   target="_blank"
                   className="hover:text-white hover:-translate-y-[.2em] transition-all duration-200 ease-in-out"
                 >
@@ -193,7 +190,7 @@ export default function Footer() {
                 </span>
                 <div className="flex justify-start items-center gap-[1.5em] text-[1.6em] ">
                   <Link
-                    href="https://www.linkedin.com/in/kevinragil/"
+                    href="https://www.linkedin.com/in/kevin-ragil-krisna-dyansyah/"
                     target="_blank"
                     className="hover:text-white hover:-translate-y-[.2em] transition-all duration-200 ease-in-out"
                   >
