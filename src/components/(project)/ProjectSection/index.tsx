@@ -47,7 +47,7 @@ export default function ProjectSection() {
       title: "E-Antivirus",
       content:
         "Website sistem monitoring aktivitas pegawai yang tengah bertugas di ruang server Komdigi Kab. Kediri",
-      year: "2022",
+      year: "2023",
       month: "1,5 bulan",
       lib: ["CodeIgniter4", "Tailwind CSS"],
       link: "https://e-antivirus.kedirikab.go.id/",
