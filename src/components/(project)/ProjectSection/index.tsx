@@ -55,6 +55,17 @@ export default function ProjectSection() {
       image: "/images/project/eantivirus.webp",
     },
     {
+      title: "Radios Shop",
+      content:
+        "Website e-commerce untuk memasarkan produk elektronik dan aksesoris elektronik",
+      year: "2024",
+      month: "1 bulan",
+      lib: ["React Js", "Tailwind CSS"],
+      link: "https://radios-shop.vercel.app/",
+      status: false,
+      image: "/images/project/radios.png",
+    },
+    {
       title: "Deadlift Tracker",
       content:
         "Aplikasi Berbasis Web Untuk Perhitungan Repetisi Dan Koreksi Gerakan Deadlift Menggunakan Estimasi Pose",
