@@ -98,6 +98,17 @@ export default function ProjectSection() {
       status: false,
       image: "/images/project/shortlinkmu.webp",
     },
+    {
+      title: "Technosia",
+      content:
+        "Website Artikel seputar Teknologi, Informasi, dan Finansial",
+      year: "2026", // ini tahun (buat sorting)
+      month: "1 bulan",
+      lib: ["Next Js", "Tailwind CSS"],
+      link: "https://technosia.web.id/",
+      status: false,
+      image: "/images/project/technosia.webp",
+    },
   ];
 
   const detail = ["year", "timeline", "stack", "preview"];
