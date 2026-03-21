@@ -33,17 +33,6 @@ export default function ProjectSection() {
 
   const project = [
     {
-      title: "Shortlinkmu",
-      content:
-        "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
-      year: "2026", // ini tahun (buat sorting)
-      month: "5 bulan",
-      lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
-      link: "https://shortlinkmu.com/",
-      status: false,
-      image: "/images/project/shortlinkmu.webp",
-    },
-    {
       title: "Taman Sekartaji",
       content:
         "Website papan informasi sekartaji yang berguna sebagai informasi untuk pengunjung taman sekartaji",
@@ -97,6 +86,17 @@ export default function ProjectSection() {
       link: "https://vin-inventory.vercel.app/",
       status: false,
       image: "/images/project/inventory.png",
+    },
+    {
+      title: "Shortlinkmu",
+      content:
+        "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
+      year: "2026", // ini tahun (buat sorting)
+      month: "5 bulan",
+      lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
+      link: "https://shortlinkmu.com/",
+      status: false,
+      image: "/images/project/shortlinkmu.webp",
     },
   ];
 
