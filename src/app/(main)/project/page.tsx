@@ -2,7 +2,6 @@
 "use client";
 
 import ProjectSection from "@/components/(project)/ProjectSection";
-import Navbar from "@/components/Navbar";
 import { useRevealer } from "@/hooks/useRevealer";
 
 export default function project() {
