@@ -33,6 +33,7 @@ export default function ProjectSection() {
 
   const project = [
     {
+      id: 2,
       title: "Taman Sekartaji",
       content:
         "Website papan informasi sekartaji yang berguna sebagai informasi untuk pengunjung taman sekartaji",
@@ -44,6 +45,7 @@ export default function ProjectSection() {
       image: "/images/project/sekartaji.webp",
     },
     {
+      id: 1,
       title: "E-Antivirus",
       content:
         "Website sistem monitoring aktivitas pegawai yang tengah bertugas di ruang server Komdigi Kab. Kediri",
@@ -55,6 +57,7 @@ export default function ProjectSection() {
       image: "/images/project/eantivirus.webp",
     },
     {
+      id: 3,
       title: "Radios Shop",
       content:
         "Website e-commerce untuk memasarkan produk elektronik dan aksesoris elektronik",
@@ -66,6 +69,7 @@ export default function ProjectSection() {
       image: "/images/project/radios.png",
     },
     {
+      id: 4,
       title: "Deadlift Tracker",
       content:
         "Aplikasi Berbasis Web Untuk Perhitungan Repetisi Dan Koreksi Gerakan Deadlift Menggunakan Estimasi Pose",
@@ -77,6 +81,7 @@ export default function ProjectSection() {
       image: "/images/project/deadlift.png",
     },
     {
+      id: 5,
       title: "Smart Inventory",
       content:
         "aplikasi web yang dirancang untuk membantu perusahaan dalam mengelola inventori barang secara efisien",
@@ -88,6 +93,7 @@ export default function ProjectSection() {
       image: "/images/project/inventory.png",
     },
     {
+      id: 6,
       title: "Shortlinkmu",
       content:
         "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
@@ -99,6 +105,7 @@ export default function ProjectSection() {
       image: "/images/project/shortlinkmu.webp",
     },
     {
+      id: 7,
       title: "Technosia",
       content:
         "Website Artikel seputar Teknologi, Informasi, dan Finansial",
@@ -122,9 +129,9 @@ export default function ProjectSection() {
     const yearB = parseInt(b.year as string);
 
     if (sortOrder === "asc") {
-      return yearA - yearB; // terlama → terbaru
+      return a.id - b.id; // terlama → terbaru
     } else {
-      return yearB - yearA; // terbaru → terlama
+      return b.id - a.id; // terbaru → terlama
     }
   });
 

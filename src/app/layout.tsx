@@ -127,7 +127,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${figtree.variable} ${manrope.variable} ${inter.variable} ${dmSans.variable} ${rethink.variable} ${league.variable} ${bebas.variable} ${poppins.variable} ${geistMono.variable} antialiased`}
       >
