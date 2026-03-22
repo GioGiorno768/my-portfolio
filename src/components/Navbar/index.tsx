@@ -265,7 +265,7 @@ const Navbar = () => {
                         whileHover={{ y: -2 }}
                       >
                         <Link
-                          href="https://www.linkedin.com/in/kevinragil/"
+                          href="https://www.linkedin.com/in/kevin-ragil-krisna-dyansyah"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

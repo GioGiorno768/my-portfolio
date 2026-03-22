@@ -81,7 +81,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className = "" }) => {
           >
             <div className="flex gap-[1vw] ">
               <Link
-                href="https://www.linkedin.com/in/kevinragil/"
+                href="https://www.linkedin.com/in/kevin-ragil-krisna-dyansyah"
                 target="_blank"
               >
                 <span className="mdi--linkedin w-[2.5em] h-[2.5em]"></span>
