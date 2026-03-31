@@ -236,7 +236,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          +62 89 635 650 954
+                          +62 896 3565 0954
                         </Link>
                       </motion.div>
                       <motion.div
