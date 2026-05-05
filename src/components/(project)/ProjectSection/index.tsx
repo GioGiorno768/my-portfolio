@@ -92,18 +92,18 @@ export default function ProjectSection() {
       status: false,
       image: "/images/project/inventory.png",
     },
-    {
-      id: 6,
-      title: "Shortlinkmu",
-      content:
-        "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
-      year: "2026", // ini tahun (buat sorting)
-      month: "5 bulan",
-      lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
-      link: "https://shortlinkmu.com/",
-      status: false,
-      image: "/images/project/shortlinkmu.webp",
-    },
+    // {
+    //   id: 6,
+    //   title: "Shortlinkmu",
+    //   content:
+    //     "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
+    //   year: "2026", // ini tahun (buat sorting)
+    //   month: "5 bulan",
+    //   lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
+    //   link: "https://shortlinkmu.com/",
+    //   status: false,
+    //   image: "/images/project/shortlinkmu.webp",
+    // },
     {
       id: 7,
       title: "Technosia",
