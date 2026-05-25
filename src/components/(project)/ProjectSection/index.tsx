@@ -92,18 +92,18 @@ export default function ProjectSection() {
       status: false,
       image: "/images/project/inventory.png",
     },
-    // {
-    //   id: 6,
-    //   title: "Shortlinkmu",
-    //   content:
-    //     "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
-    //   year: "2026", // ini tahun (buat sorting)
-    //   month: "5 bulan",
-    //   lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
-    //   link: "https://shortlinkmu.com/",
-    //   status: false,
-    //   image: "/images/project/shortlinkmu.webp",
-    // },
+    {
+      id: 6,
+      title: "Shortlinkmu",
+      content:
+        "Platform Monetisasi Link yang Memungkinkan Kreator Konten Menghasilkan Pendapatan Melalui Iklan yang Ditampilkan pada Halaman Link Singkatnya.",
+      year: "2026", // ini tahun (buat sorting)
+      month: "5 bulan",
+      lib: ["Next Js", "Laravel 11", "Tailwind CSS", "framer motion"],
+      link: "https://shortlinkmu.com/",
+      status: false,
+      image: "/images/project/shortlinkmu.webp",
+    },
     {
       id: 7,
       title: "Technosia",
@@ -115,6 +115,30 @@ export default function ProjectSection() {
       link: "https://technosia.web.id/",
       status: false,
       image: "/images/project/technosia.webp",
+    },
+    {
+      id: 8,
+      title: "Ambanet",
+      content:
+        "Website Ambanet sebagai platform untuk pembelian Paket Internet",
+      year: "2026", // ini tahun (buat sorting)
+      month: "1 Minggu",
+      lib: ["React Js", "Tailwind CSS"],
+      link: "https://ambanet.vercel.app/",
+      status: false,
+      image: "/images/project/ambanet.webp",
+    },
+    {
+      id: 9,
+      title: "Sekartaji Futsal",
+      content:
+        "Website Sekartaji Futsal sebagai platform untuk informasi dan pemesanan lapangan futsal",
+      year: "2026", // ini tahun (buat sorting)
+      month: "1 Minggu",
+      lib: ["Laravel 11", "Alpine.js", "Tailwind CSS"],
+      link: "https://sekartajifutsal.my.id/",
+      status: false,
+      image: "/images/project/sekartaji-futsal.webp",
     },
   ];
 
